@@ -1,7 +1,7 @@
 services:
   - type: web
     name: piibackend
-    runtime: python 3
+    runtime: python
     rootDir: backend
     plan: free
 
