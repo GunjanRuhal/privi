@@ -2,8 +2,12 @@ services:
   - type: web
     name: piibackend
     runtime: python
+
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
+
     rootDir: backend
-    plan: free
 
     buildCommand: |
       pip install --upgrade pip setuptools wheel
